@@ -14,7 +14,7 @@ from alert import alert_queue
 class PacketSnifferGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Network Packet Sniffer - Real-Time Monitor")
+        self.root.title("SniffNet: Network Packet Sniffer with Real-Time Anomaly Detection")
         self.root.geometry("900x600")
         self.root.resizable(False, False)
 

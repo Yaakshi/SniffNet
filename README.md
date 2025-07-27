@@ -10,14 +10,15 @@ Network intrusion detection is crucial in identifying abnormal traffic patterns 
 
 ## Tools Used
 
-1. ```Python 3.13.5``` – Core programming language
-2. ```Npcap``` – Windows Packet capture driver
-3. ```Scapy``` – Packet sniffing and parsing
-4. ```SQLite3``` – Local database to store packet logs
-5. ```Matplotlib``` – Graphical traffic plots
-6. ```Tkinter``` – GUI for live traffic visualization and alerting
-7. ```Collections/Regex``` – Efficient anomaly tracking
-8. ```time, re, threading``` – Real-time analysis & concurrency
+1. ``` Visual Studio Code``` - Code Editor
+2. ```Python 3.13.5``` – Core programming language
+3. ```Npcap``` – Windows Packet capture driver
+4. ```Scapy``` – Packet sniffing and parsing
+5. ```SQLite3``` – Local database to store packet logs
+6. ```Matplotlib``` – Graphical traffic plots
+7. ```Tkinter``` – GUI for live traffic visualization and alerting
+8. ```Collections/Regex``` – Efficient anomaly tracking
+9. ```time, re, threading``` – Real-time analysis & concurrency
 
 ## Steps Involved in Building the Project
 

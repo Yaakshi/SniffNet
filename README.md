@@ -8,6 +8,8 @@ This Windows-based project provides a real-time network packet sniffer with anom
 
 Network intrusion detection is crucial in identifying abnormal traffic patterns and potential attacks. Built with Python and Scapy, this system actively captures and analyses real-time traffic to identify potential attacks. All data and anomalies are logged to SQLite for forensic analysis. A Tkinter GUI with Matplotlib provides live visualization and instant alerts. It serves as both a learning tool and a lightweight defensive mechanism.
 
+<img width="1122" height="787" alt="image" src="https://github.com/user-attachments/assets/7a4d4266-c310-4335-852c-22b1fbb3594d" />
+
 ## Tools Used
 
 1. ``` Visual Studio Code``` - Code Editor

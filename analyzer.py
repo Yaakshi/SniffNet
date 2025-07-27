@@ -88,17 +88,17 @@ def analyze_packet(data):
         if len(arp_cache[src]) > THRESHOLDS["arp_spoof_threshold"]:
             alerts.append(f"ARP spoofing: {src} has {len(arp_cache[src])} MACs")
 
-    # # 8. TCP Flag Scans (Xmas/NULL)
-    # if proto == "TCP":
-    #     flag_value = int(flags) if str(flags).isdigit() else 0
-    #     if flag_value == 0:
-    #         alerts.append(f"NULL scan from {src}")
-    #     elif flag_value == 41:  # FIN + PSH + URG (Xmas scan)
-    #         alerts.append(f"Xmas scan from {src}")
+    # 8. TCP Flag Scans (Xmas/NULL)
+    if proto == "TCP":
+        flag_value = int(flags) if str(flags).isdigit() else 0
+        if flag_value == 0:
+            alerts.append(f"NULL scan from {src}")
+        elif flag_value == 41:  # FIN + PSH + URG (Xmas scan)
+            alerts.append(f"Xmas scan from {src}")
 
-    # # 9. Low TTL
-    # if ttl is not None and ttl < 10:
-    #     alerts.append(f"Low TTL from {src}: TTL={ttl}")
+    # 9. Low TTL
+    if ttl is not None and ttl < 10:
+        alerts.append(f"Low TTL from {src}: TTL={ttl}")
 
     # 10. Reserved IP
     if src and (src.startswith("127.") or src.startswith("0.")):
